@@ -1,0 +1,195 @@
+Create a fully professional, modern school website for "LOVE PUBLIC SR. SEC. SCHOOL, DHONS" using a single index.html file with embedded CSS and JS.
+
+=== COLOR THEME ===
+Primary: Deep Navy Blue #0A1628
+Secondary: #112240
+Accent: #1E3A5F
+White: #FFFFFF
+Light Gray: #F8F9FC
+Text: #1a1a2e
+Subtle border: #e0e6f0
+
+NO golden/yellow. Pure Navy Blue + White professional theme only.
+
+=== GOOGLE FONTS ===
+Import 'Poppins' (weights 300, 400, 500, 600, 700) from Google Fonts.
+Use Poppins as the only font throughout.
+
+======================
+SECTION 1 — TOP ADDRESS BAR
+======================
+- Thin strip at very top, background #0A1628
+- Left: white icon + "Dhons, Haryana, India"
+- Right: phone icon "+91-XXXXXXXXXX" | email icon "info@lovepublicschool.edu.in"
+- Font size 12px, white color, padding 7px 40px
+
+======================
+SECTION 2 — NAVBAR (Sticky)
+======================
+- Background: #FFFFFF with bottom box-shadow
+- Left: circular navy logo with white text "LPS" (44px) + school name "Love Public Sr. Sec. School" in navy bold
+- Right: nav links — Home | About | Academics | Admissions | Gallery | Contact
+- Nav links: navy color, font-weight 500, 14px
+- Active/hover: animated underline in navy blue using CSS ::after pseudo-element
+- On scroll: navbar background stays white with stronger shadow
+- Hamburger menu for mobile (JS toggle)
+
+======================
+SECTION 3 — HERO SECTION (Full screen)
+======================
+Background: dark navy overlay (#0A1628 at 75% opacity) over auto-sliding images.
+
+IMAGE SLIDER (Auto):
+- Use 3 real high-quality school/education images from Unsplash using direct URLs:
+  Image 1: https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1400
+  Image 2: https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400
+  Image 3: https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1400
+- Slides change every 3 seconds with smooth CSS fade transition
+- Dots at bottom for manual navigation
+
+HERO TEXT (centered, over slider):
+- Small navy badge pill: "Welcome to Our School"
+- H1 (white, bold, 48px): "LOVE PUBLIC SR. SEC. SCHOOL"
+- H2 (light blue, 20px, weight 300): "Dhons, Haryana | Shaping Future Leaders"
+- Two buttons side by side:
+  Button 1: "Apply for Admission" — white background, navy text, rounded, solid
+  Button 2: "Explore School" — transparent background, white border & text, rounded
+
+ANNOUNCEMENT TICKER (below buttons, still inside hero):
+- Full-width strip: navy blue background #112240, white text
+- Left label box: "📢 ANNOUNCEMENTS" (white bg, navy text, bold)
+- Right: scrolling marquee with 5-6 sample announcements like:
+  "Admission Open for Session 2025-26 | Annual Sports Day on 15 Feb | Board Exam Results: 98% Pass Rate | New Computer Lab Inaugurated | PTM Scheduled for 20 Jan | Science Exhibition on 5 March"
+- Smooth continuous CSS animation (marquee/keyframe scroll left, infinite loop)
+
+======================
+SECTION 4 — STATISTICS
+======================
+- Background: #FFFFFF
+- Section heading: "Our Achievements at a Glance" (navy, centered, 28px)
+- 4 cards in a row (CSS grid):
+  Card 1: "1200+" | "Students Enrolled"
+  Card 2: "60+" | "Expert Teachers"
+  Card 3: "20+" | "Years of Excellence"
+  Card 4: "98%" | "Board Results"
+- Each card: white bg, navy left border (4px), subtle shadow, large bold navy number (48px), gray label below
+- On scroll: count-up JS animation for numbers
+
+======================
+SECTION 5 — LIFE AT SCHOOL
+======================
+- Background: #F8F9FC
+- Left side (50%): Section heading + description paragraph about student life, activities, discipline
+- Right side (50%): CSS grid of 4 image boxes (2x2) using Unsplash images:
+  https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600
+  https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600
+  https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600
+  https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600
+- Images with border-radius 12px, hover zoom effect
+
+======================
+SECTION 6 — SCHOOL FACILITIES
+======================
+- Background: #FFFFFF
+- Centered heading: "World-Class Facilities"
+- 6 facility cards in a 3x2 grid:
+  1. Smart Classrooms — ti icon style SVG or emoji 🖥️
+  2. Science Laboratories — 🔬
+  3. Computer Lab — 💻
+  4. Sports Ground — ⚽
+  5. Library — 📚
+  6. Transport — 🚌
+- Each card: white bg, navy top border 3px, icon (40px emoji), title (bold navy), 2-line description
+- Hover: card lifts with box-shadow transition
+
+======================
+SECTION 7 — MEET OUR EXPERTS
+======================
+- Background: #F8F9FC
+- Heading: "Our Dedicated Faculty"
+- 4 faculty cards in a row:
+  Each card: circular photo (use Unsplash avatar images), name, subject, short quote
+  Photo URLs:
+    https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=200
+    https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200
+    https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200
+    https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200
+  Names: "Mr. Rajesh Sharma", "Mrs. Priya Mehta", "Mr. Anil Kumar", "Mrs. Sunita Rao"
+  Subjects: "Mathematics", "Science", "English", "Social Studies"
+- Cards: white bg, centered, photo circular with navy border 3px, shadow on hover
+
+======================
+SECTION 8 — ADMISSION PROCESS
+======================
+- Background: #FFFFFF
+- Heading: "Simple Admission Process"
+- Horizontal step-by-step flow (4 steps connected by dashed navy line):
+  Step 1: "Fill Application Form" — circle number 01
+  Step 2: "Document Submission" — circle number 02
+  Step 3: "Entrance Assessment" — circle number 03
+  Step 4: "Confirmation & Joining" — circle number 04
+- Each step: navy circle with white number, bold title below, small description
+- Responsive: stack vertically on mobile
+- Below steps: a navy CTA button "Download Admission Form"
+
+======================
+SECTION 9 — PARENTS' REVIEWS
+======================
+- Background: #F8F9FC
+- Heading: "What Parents Say"
+- 3 review cards in a row:
+  Each: large quote mark (navy, 60px), review text (italic, gray), star rating (5 navy stars ★★★★★), parent name (bold navy), child's class
+  Sample reviews:
+    "Best school in the region. My child has grown academically and personally." — Ramesh Verma, Parent of Class 8
+    "The teachers are very dedicated and caring. Excellent environment." — Sunita Devi, Parent of Class 5
+    "Admission process was smooth and staff was very helpful." — Manoj Kumar, Parent of Class 10
+- Cards: white bg, soft shadow, left navy accent border 3px
+
+======================
+SECTION 10 — CONTACT US
+======================
+- Background: #0A1628 (dark navy)
+- Heading: "Get In Touch" (white, centered)
+- Two columns:
+  Left (40%): contact info cards (white text):
+    📍 Address: "Dhons, Haryana, India"
+    📞 Phone: "+91-XXXXXXXXXX"
+    ✉ Email: "info@lovepublicschool.edu.in"
+    🕐 Timings: "Mon–Sat: 8:00 AM – 2:30 PM"
+  Right (60%): contact form with fields:
+    - Full Name (input)
+    - Email (input)
+    - Phone (input)
+    - Message (textarea)
+    - Submit button: white bg, navy text, rounded
+  Form styling: white bg inputs, navy border on focus, border-radius 8px
+
+======================
+SECTION 11 — FOOTER
+======================
+- Background: #0A1628
+- Top border: 1px solid #1E3A5F
+- 3 columns:
+  Col 1: LPS logo circle + school name (white) + 2-line description + social icons (Facebook, Instagram, YouTube — use SVG or unicode symbols)
+  Col 2: "Quick Links" heading (white) + list of nav links in light gray
+  Col 3: "Contact" heading + address, phone, email in light gray
+- Bottom strip (background #050D1A):
+  "© 2025 Love Public Sr. Sec. School, Dhons, Haryana. All Rights Reserved."
+  Centered, 12px, gray color
+
+======================
+TECHNICAL REQUIREMENTS
+======================
+- Single index.html file — all CSS and JS embedded
+- Fully responsive: mobile, tablet, desktop
+- Smooth scroll: html { scroll-behavior: smooth; }
+- Section fade-in animation on scroll using IntersectionObserver JS
+- Hero slider: auto plays every 3 seconds, fade transition, dots navigation
+- Announcement ticker: infinite left-scroll CSS animation
+- Stats count-up: JS counter animation on scroll
+- All hover effects: transitions 0.3s ease
+- Mobile nav: hamburger icon toggles menu
+- No external CSS frameworks (no Bootstrap/Tailwind)
+- Only external resource: Google Fonts Poppins
+
+Write complete, clean, production-ready HTML/CSS/JS. Do not leave any section incomplete.

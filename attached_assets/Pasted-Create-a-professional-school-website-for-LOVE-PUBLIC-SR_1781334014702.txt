@@ -1,0 +1,72 @@
+Create a professional school website for "LOVE PUBLIC SR. SEC. SCHOOL DHONS" using HTML, CSS, and JavaScript in a single index.html file.
+
+COLOR THEME: Deep Navy Blue (#0d2137) as primary, Golden Amber (#e8a020) as accent, Light Blue (#a8d4f0) for text on dark backgrounds, White (#ffffff) and Light Gray (#f4f7fc) for content areas.
+
+STRUCTURE (top to bottom):
+
+1. ADDRESS BAR (top strip):
+- Dark navy background (#1a3a5c)
+- Left side: school address "Dhons, Haryana, India" with location icon
+- Right side: phone number and email (use placeholder like +91-XXXXXXXXXX)
+- Small font, thin bar
+
+2. NAVIGATION BAR:
+- Dark navy (#0d2137) background
+- Left: School logo circle (golden "LPS" initials) + School full name in white
+- Right: Nav links — Home, About, Academics, Admissions, Gallery, Contact
+- Links in light blue, hover effect in golden color
+- Sticky navbar (stays on top while scrolling)
+
+3. HERO SECTION:
+- Dark navy to slightly lighter navy gradient background
+- Center-aligned content
+- Small golden badge: "Est. Dhons, Haryana"
+- Large bold heading: "LOVE PUBLIC SR. SEC. SCHOOL, DHONS"
+- Subtitle: "Shaping Future Leaders with Quality Education & Values"
+- Two buttons: "Explore Admissions" (golden filled) and "Learn More" (outline)
+- Decorative golden circle shapes in background (CSS only, no images)
+
+4. CONTENT AREA (multiple sections):
+
+Section A - Stats Row:
+- 4 stat cards in a row
+- Stats: "500+ Students", "30+ Teachers", "15+ Years", "100% Results"
+- White cards with golden top border, bold numbers
+
+Section B - About School:
+- Two column layout
+- Left: Heading "About Our School" + paragraph about the school's vision and mission (write professional placeholder text)
+- Right: A decorative box with school highlights list (with checkmark icons)
+
+Section C - Why Choose Us (3 feature cards):
+- Icons + Title + Description
+- Cards: "Quality Education", "Experienced Faculty", "Holistic Development"
+- White cards with shadow, golden icon color
+
+Section D - Academics:
+- Section heading: "Our Academic Programs"
+- 3 cards: Primary Section, Secondary Section, Senior Secondary (Science & Commerce)
+- Each card with colored top border and brief description
+
+Section E - Notice Board / Announcements:
+- Left side: "Latest Notices" - a styled list of 4-5 sample announcements with dates
+- Right side: "Upcoming Events" - 3-4 sample events in card style
+
+5. FOOTER:
+- Dark navy background
+- 3 columns:
+  - Column 1: School name + logo + short description
+  - Column 2: Quick Links (same as navbar)
+  - Column 3: Contact Info (address, phone, email with icons)
+- Bottom strip: "© 2025 Love Public Sr. Sec. School, Dhons. All Rights Reserved."
+
+DESIGN REQUIREMENTS:
+- Fully responsive (mobile + desktop)
+- Smooth scroll behavior
+- Hover effects on all buttons and cards
+- CSS animations: fade-in on scroll for sections
+- Professional Google Font: use 'Poppins' from Google Fonts
+- Golden color highlights throughout
+- No external libraries except Google Fonts
+
+Write complete, clean, production-ready HTML/CSS/JS code in one single index.html file.
