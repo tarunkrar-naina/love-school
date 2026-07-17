@@ -420,16 +420,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-[rgba(15,60,56,0.72)] z-10" />
 
         <div className="relative z-20 container mx-auto px-4 md:px-6 lg:px-8 text-center text-white py-12">
-          {/* Admission Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.05 }}
-            className="inline-flex items-center gap-2 bg-amber-400/90 text-[#0F4F4B] px-5 py-1.5 rounded-full font-bold text-xs uppercase tracking-wider mb-4 shadow-lg"
-          >
-            🎓 Open Admissions {FULL_ADMISSION_YEAR}
-          </motion.div>
-
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
