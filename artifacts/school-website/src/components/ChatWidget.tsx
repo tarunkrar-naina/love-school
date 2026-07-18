@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send, Loader2, Volume2, VolumeX } from "lucide-react";
+import { apiUrl } from "@/lib/api";
 
 type Message = {
   role: "user" | "assistant";
@@ -76,7 +77,7 @@ export default function ChatWidget() {
     setError(null);
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(apiUrl("/api/chat"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Users, RefreshCw, Download, Search, GraduationCap } from "lucide-react";
+import { apiUrl } from "@/lib/api";
 
 type Admission = {
   id: number;
@@ -34,7 +35,7 @@ export default function AdminAdmissions() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/admissions");
+      const res = await fetch(apiUrl("/api/admissions"));
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to load");
       setAdmissions(data.admissions);

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CheckCircle2, Send, FileText, Users, GraduationCap, Phone } from "lucide-react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
+import { apiUrl } from "@/lib/api";
 
 const CURRENT_YEAR = new Date().getFullYear();
 const FULL_YEAR = `${CURRENT_YEAR}-${CURRENT_YEAR + 1}`;
@@ -92,7 +93,7 @@ export default function Admissions() {
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
     setLoading(true);
     try {
-      const res = await fetch("/api/admission", {
+      const res = await fetch(apiUrl("/api/admission"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
